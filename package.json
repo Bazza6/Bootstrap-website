@@ -1,5 +1,5 @@
 {
-  "name": "sprint-2",
+  "name": "new-sprint-2",
   "version": "1.0.0",
   "description": "",
   "main": "index.js",
@@ -10,6 +10,6 @@
   "author": "",
   "license": "ISC",
   "dependencies": {
-    "bootstrap": "^5.2.0-beta1"
+    "bootstrap": "^5.1.3"
   }
 }

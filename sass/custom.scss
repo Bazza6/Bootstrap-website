@@ -1,6 +1,100 @@
 //custom variables 
 $primary: #5265E1;
 $secondary: #FA5959;
+$info: #0a1429;
+
+$font-family-sans-serif: 'Rubik', sans-serif;
+
+$accordion-icon-color: $primary;
+$accordion-button-active-bg:   white;
+$accordion-button-active-color: $secondary;
+$accordion-button-focus-border-color:  white;
+$accordion-button-focus-box-shadow:   white;
+
+
 
 // import Bootstrap
 @import "../node_modules/bootstrap/scss/bootstrap";
+
+.navbar-light .navbar-nav .nav-link {
+    color: rgba(0, 0, 0, 0.55);
+    &:hover {
+        color:$secondary;
+    }
+}
+.nav-link {
+    color: grey;
+    &:hover {
+        color:$secondary;
+    }
+}
+.btn-primary {
+	color: $body-bg;
+	&:hover {
+		color: $primary;
+		background-color: $body-bg;
+		border-color: $primary;
+	}
+}
+.btn-secondary {
+	color: $body-bg;
+
+	&:hover {
+		color: $secondary !important;
+		background-color: $body-bg;
+	}
+}
+.navbar-light .navbar-toggler-icon {
+    background-image: url(/Recursos/Imagenes/icon-hamburger.svg);
+}
+.navbar-toggler {
+    border: 0px;
+}
+.fundo {
+    position: relative;
+}
+.browser  {
+    height: 170px;
+}
+.card {
+     border-radius: 4%;
+}
+#logo-nav {   /* tengo el logo a la izquierda en modo movil */
+    align-self: flex-start;
+}
+.nav-tabs .nav-item.show .nav-link, .nav-tabs .nav-link.active {
+    border-bottom: solid $secondary 4px;    
+}
+.nav-tabs .nav-link { /* quitamos el borde */
+    border: 0px;
+}
+#fundoDX {
+    background-color: #5265E1;
+    width: 150rem;
+    height: 100rem;
+    border-radius: 15rem 0 0 15rem;
+    max-height: 80%;
+    max-width: 90%;
+    position: absolute;
+    z-index: -1;
+    top: 20%;
+    left: 20%;
+}
+.nav-link {
+    color: grey;
+}
+#fundoSX {
+    background-color: #5265E1;
+    width: 150rem;
+    height: 100rem;
+    border-radius: 0 15rem 15rem 0;
+    max-height: 80%;
+    max-width: 90%;
+    position: absolute;
+    z-index: -1;
+    right: 20%;
+    bottom: 0;
+} 
+.hero-parent, .tab-parent {
+    position: relative;
+}
